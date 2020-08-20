@@ -52,10 +52,10 @@ class DirectoryItem extends Component {
 
             <div className="directory-menu">
 
-                {this.state.sections.map(item => (
+                {this.state.sections.map(({id,...otherProps})=>(
 
                    
-                        <Menuitem key={item.id} title={item.title} imageUrl={item.imageUrl} size={item.size} />
+                        <Menuitem key={id} {...otherProps} />
                   
                 )
                 )

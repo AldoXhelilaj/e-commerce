@@ -1,32 +1,40 @@
 import React from 'react';
 import '../menuItem.style.scss'
+import { withRouter } from 'react-router';
 
 
-const MenuItem = ({title,imageUrl,size}) => {
+const MenuItem = ({ ...props }) => {
 
 
-    
 
-let menuclass=['menu-item']
-if(size){
-    menuclass.push(size)
 
-}
+    console.log(props)
+
+
+    let menuclass = ['menu-item']
+    if (props.size) {
+        menuclass.push(props.size)
+
+
+    }
 
     return (
- 
+
+
+        <div className={menuclass.join(" ")}  onClick={()=>props.history.push(`${props.match.url}${props.linkUrl}`)}>
+            <div style={{ backgroundImage: `url(${props.imageUrl})` }} className="background-hover"></div>
+
             
-            <div className={menuclass.join(" ")}>
-            <div style={{backgroundImage:`url(${imageUrl})`}} className="background-hover"></div>
-                    <div className="content">
+            <div className="content">
+       
 
 
-                        <h1 className="title">{title}</h1>
-                        <span className='subtitle'>shop now</span>
-                    </div>
-                </div>
-      
+                <h1 className="title">{props.title}</h1>
+                <span className='subtitle'>shop now</span>
+            </div>
+        </div>
+
     );
 }
 
-export default MenuItem
+export default withRouter(MenuItem)
