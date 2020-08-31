@@ -2,7 +2,7 @@ import React from 'react';
 import '../menuItem.style.scss'
 import { withRouter } from 'react-router';
 
-
+   
 const MenuItem = ({ ...props }) => {
 
 
