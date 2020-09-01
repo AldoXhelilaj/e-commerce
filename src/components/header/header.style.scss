@@ -1,0 +1,23 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.option-menus {
+    display: flex;
+   
+    justify-content: flex-end;
+
+    width: 50%;
+
+    a{
+       
+            padding: 0 14px;
+        
+    }
+}
+
+
+
