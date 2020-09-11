@@ -1,0 +1,15 @@
+button{
+
+
+    &.googleSingin{
+        background-color: #2196F3;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
