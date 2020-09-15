@@ -47,6 +47,7 @@ class Signin extends Component {
             type="email"
             name="email"
             id="email"
+            autocomplete="on"
             value={email}
             required
             handleChange={this.onHandlechange}
