@@ -46,7 +46,7 @@ class signUp extends Component {
     });
   };
   render() {
-    console.log(this.state);
+  
     return (
       <div>
         <div className="sign-up">
