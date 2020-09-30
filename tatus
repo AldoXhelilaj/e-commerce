@@ -1,0 +1,72 @@
+[33mcommit 70fed11bfd463106e5a254ccf5eaf551787c4f47[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Mon Sep 28 11:58:42 2020 +0200
+
+    implement redux and add user reducer and action
+
+[33mcommit d1f46060cd49212ee734d18602d17d09ad3c8e49[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Wed Sep 23 10:10:51 2020 +0200
+
+    add sign in component firebase
+
+[33mcommit 83d935b3054f0f14bab8275afc21669d4081aa84[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Tue Sep 15 17:40:19 2020 +0200
+
+    implement firebase sign up
+
+[33mcommit 5f69c8aa28ad70977abf183bb0490cb3b4533b40[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Fri Sep 11 10:04:03 2020 +0200
+
+    add google sign in with firebase
+
+[33mcommit 4e3a432d5195d128c756edded711206c5194734b[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Tue Sep 1 10:23:30 2020 +0200
+
+    add header component
+
+[33mcommit a20ed0a65e759873b35a5902c74852709d92e034[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Mon Aug 31 12:03:52 2020 +0200
+
+    add 2 more components
+
+[33mcommit 41a3344e67471ef36a28c40a9562611b0e4e8e80[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Thu Aug 20 14:40:17 2020 +0200
+
+    Add react router to menu-item component, and use UseRouter to ket the props
+
+[33mcommit 1c74e20ca6d37cc4ebf58e6af0b90539f7bb0698[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Thu Aug 20 10:36:28 2020 +0200
+
+    add components file structure
+
+[33mcommit 18ebdfa7f9f36bd67aee283c23bfec1be1f2c64b[m
+Merge: 6c8bdec 3a59146
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Tue Aug 18 15:14:25 2020 +0200
+
+    Merge branch 'master' of https://github.com/AldoXhelilaj/e-commerce
+
+[33mcommit 6c8bdec1cc57ba6783e141885a4a9edcdd9739f4[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Tue Aug 18 14:50:36 2020 +0200
+
+    Starting the project
+
+[33mcommit 3a591461414b8288d28fa862b0b76ef65b0133e5[m
+Author: AldoXhelilaj <aldoxhelili69@hotmail.com>
+Date:   Tue Aug 18 14:47:36 2020 +0200
+
+    Initial commit
+
+[33mcommit 4a1099be01937cb1865b9ea6112e72f4576fe7cb[m
+Author: aldo <aldoxhelili69@hotmail.com>
+Date:   Mon Aug 17 11:14:47 2020 +0200
+
+    Initialize project using Create React App

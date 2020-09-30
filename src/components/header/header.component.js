@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.style.scss";
 import { auth } from "../../firebase/firebase.utils";
-import {connect} from 'react-redux';
-import CartIcon from '../Cart/cart-icon.component'
-import CartDropdown from '../Cart/cartDropdown.component';
+import { connect } from "react-redux";
+import CartIcon from "../Cart/cart-icon.component";
+import CartDropdown from "../Cart/cartDropdown.component";
 import { toggleCart } from "../../redux/cart/cart.action";
- 
-const Header = ({ currentUser,cartToggle }) => {
+
+const Header = ({ currentUser, cartToggle }) => {
   return (
     <div className="header">
       <div className="logo">
@@ -17,28 +17,25 @@ const Header = ({ currentUser,cartToggle }) => {
         <Link to="/shop">Shop</Link>
         <Link to="/contact">Contact</Link>
 
-        {currentUser ? (<div className="option" onClick={() => auth.signOut()}>
+        {currentUser ? (
+          <div className="option" onClick={() => auth.signOut()}>
             Sign Out
           </div>
-         
         ) : (
-            <Link to="/signin">Sign in</Link>
+          <Link to="/signin">Sign in</Link>
         )}
-        <CartIcon/>
-        {cartToggle ? (  <CartDropdown/>): null }
-      
+        <CartIcon />
+        {cartToggle ? <CartDropdown /> : null}
       </div>
     </div>
   );
 };
 
-const mapStateToProps=state=>{
-return{
-
-  currentUser:state.user.currentUser,
-  cartToggle:state.cartToggle.hidden
-}
-
-}
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.user.currentUser,
+    cartToggle: state.cartToggle.hidden,
+  };
+};
 
 export default connect(mapStateToProps)(Header);
