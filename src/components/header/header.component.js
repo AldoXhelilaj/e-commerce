@@ -25,7 +25,7 @@ const Header = ({ currentUser, cartToggle }) => {
           <Link to="/signin">Sign in</Link>
         )}
         <CartIcon />
-        {cartToggle ? <CartDropdown /> : null}
+        {!cartToggle ? <CartDropdown /> : null}
       </div>
     </div>
   );

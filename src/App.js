@@ -9,6 +9,8 @@ import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.action";
 import { createUserProfile, auth } from "./firebase/firebase.utils";
 import CartDropdown from './components/Cart/cartDropdown.component'
+import CheckOutPage from './pages/checkout.component'
+import { withRouter} from 'react-router'
 
 class App extends Component {
   unsubscribe = null;
@@ -59,7 +61,7 @@ const{currentUser}=this.props
                 currentUser ? <Redirect to="/" /> : <SignInSignUp />
               }
             />
-            
+            <Route exact path="/checkout"  component={CheckOutPage}/>
           </Switch>
         </div>
       </div>
@@ -77,4 +79,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
