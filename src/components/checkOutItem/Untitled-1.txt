@@ -1,0 +1,9 @@
+<div class="left-right"><div class="left-c"><h3>Kontaktoni me ne</h3>{rsform 7}</div><div class="right-c"><h3>Informacione kontakti</h3>
+<div class="right-sub"><h3>Adresa:</h3> Rruga Nacionale Tiranë-Elbasan, Tirana, Albania.
+<h3>Shërbimi i klientit:</h3> 
+Nr. kontakti: +355 4 2395001<br>
+Nga e Hëna në të Premte 10:00 – 21:00  <br>
+E Shtunë – E Dielë 09:00 – 21:00 <br>
+Email: info@acrem.al
+<h3>Për reklama dhe organizime eventesh: </h3>Email: marketing@acrem.al
+<h3>Kërkesa për qiramarrje:</h3>  Email: leasing@acrem.al</div></div></div>

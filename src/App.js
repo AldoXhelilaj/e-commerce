@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component,Fragment } from "react";
 import Homepage from "./pages/homepage.component";
 import "./App.css";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
@@ -8,9 +8,12 @@ import ShopPage from "./pages/shop.component";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.action";
 import { createUserProfile, auth } from "./firebase/firebase.utils";
-import CartDropdown from './components/Cart/cartDropdown.component'
 import CheckOutPage from './pages/checkout.component'
 import { withRouter} from 'react-router'
+import LoadingBar from 'react-redux-loading-bar'
+
+
+
 
 class App extends Component {
   unsubscribe = null;
@@ -43,13 +46,15 @@ class App extends Component {
     this.unsubscribe();
   }
   render() {
+
 const{currentUser}=this.props
     console.log("props"+currentUser)
     return (
-      <div>
-        <div>
+     
+     <div>
+     
+     <LoadingBar/>
           <Header />
-
           <Switch>
             <Route exact path="/" component={Homepage} />
 
@@ -63,8 +68,9 @@ const{currentUser}=this.props
             />
             <Route exact path="/checkout"  component={CheckOutPage}/>
           </Switch>
-        </div>
-      </div>
+        
+          </div>
+    
     );
   }
 }

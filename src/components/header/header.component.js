@@ -10,6 +10,7 @@ import { toggleCart } from "../../redux/cart/cart.action";
 const Header = ({ currentUser, cartToggle }) => {
   return (
     <div className="header">
+    
       <div className="logo">
         <Link to="/">Logo</Link>
       </div>

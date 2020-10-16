@@ -22,7 +22,11 @@
         }
       }
     }
-  
+    .header-total {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+    }
     .total {
       margin-top: 30px;
       margin-left: auto;
@@ -53,9 +57,14 @@
     .price {
       width: 23%;
     }
-  
+    .arrow {
+        margin: 0 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
     .quantity {
-      padding-left: 20px;
+      
+      display: flex;
     }
   
     .remove-button {
