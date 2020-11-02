@@ -4,6 +4,7 @@ import {
   removeItemCheckout,
   addItemCheckout,
 } from "../../redux/cart/cart.action";
+import StripeBtn from '../stripeBtn/StripeCheckoutButton.component';
 import { connect } from "react-redux";
 
 const checkOutItem = ({
@@ -35,8 +36,10 @@ const checkOutItem = ({
       </span>
       <span className="price">{cartItem.price}</span>
       <span onClick={() => {removeItem(cartItem)}} className="remove">
+
         &#xD7;
       </span>
+     
     </div>
   );
 };

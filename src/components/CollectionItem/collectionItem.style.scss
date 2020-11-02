@@ -1,5 +1,5 @@
 .collection-item {
-  width: 15%;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -54,20 +54,19 @@ svg{
   }
 
   .collection-footer {
-    width: 100%;
+    max-width: 72%;
     height: 5%;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    width: 72%;
 
     .name {
       width: 90%;
       margin-bottom: 15px;
     }
 
-    .price {
-      width: 10%;
-    }
+   
   }
 
   &:hover {
