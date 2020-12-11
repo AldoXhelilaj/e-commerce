@@ -11,6 +11,7 @@ import { createUserProfile, auth } from "./firebase/firebase.utils";
 import CheckOutPage from './pages/checkout.component'
 import { withRouter} from 'react-router'
 import LoadingBar from 'react-redux-loading-bar'
+import { motion, AnimatePresence } from "framer-motion";
 
 
 
@@ -51,8 +52,9 @@ const{currentUser}=this.props
     console.log("props"+currentUser)
     return (
      
-     <div>
-     
+
+     <AnimatePresence>
+
      <LoadingBar/>
           <Header />
           <Switch>
@@ -68,8 +70,8 @@ const{currentUser}=this.props
             />
             <Route exact path="/checkout"  component={CheckOutPage}/>
           </Switch>
-        
-          </div>
+          </AnimatePresence>
+         
     
     );
   }

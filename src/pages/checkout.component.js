@@ -4,12 +4,50 @@ import { selectcartTotal } from "../redux/cart/cart.selectors";
 import { connect } from "react-redux";
 import CheckOutItem from "../components/checkOutItem/checkOutItem.component";
 import StripeCheckoutButton from '../components/stripeBtn/StripeCheckoutButton.component'
+import { motion } from "framer-motion";
 
 const Checkout = ({ cartItem, priceTotal }) => {
   // const { imageUrl, price, name } = cartItem;
-
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      y: "-100vh",
+      scale: 1
+    },
+    in: {
+      opacity: 1,
+      y: 0,
+      scale: 1
+    },
+    out: {
+      opacity: 0,
+      y: "100vh",
+      scale: 1,
+      
+    }
+  };
+  
+  const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 0.5
+  };
+  
+  const pageStyle = {
+    position: "absolute",
+    width: "100%"
+  };
   console.log(cartItem);
   return (
+    <motion.div
+    key
+    style={pageStyle}
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={pageVariants}
+    transition={pageTransition}
+  >
     <div className="checkout-page">
       <div className="checkout-header">
         <div className="header-block">
@@ -39,6 +77,7 @@ const Checkout = ({ cartItem, priceTotal }) => {
 
       <StripeCheckoutButton price={priceTotal}/>
     </div>
+    </motion.div>
   );
 };
 

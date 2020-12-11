@@ -4,6 +4,8 @@ import CustomBtn from "../buttonCustom/btnCustom.component";
 import { addItem, imagePlaceholder } from "../../redux/cart/cart.action";
 import { connect } from "react-redux";
 import Loader from "../../assets/loader/loader.component";
+import ProgressiveImage from '../progresiveImage/ProgresiveImage.component'
+import placeholder from '../../assets/grey-brim.jpg'
 
 const CollectionItem = ({ item, addItem, loaded, loading }) => {
   const { name, price, imageUrl } = item;
@@ -15,10 +17,11 @@ const CollectionItem = ({ item, addItem, loaded, loading }) => {
   // }
   return (
     <div className="collection-item">
-      {loading ? null : <Loader />}
-      <img src={imageUrl} className="image" onLoad={() => loaded()} />
+    <ProgressiveImage  src={imageUrl}  placeholder={placeholder}/>
+      {/* <img src={imageUrl} className="image" onLoad={() => loaded()} /> */}
       <div className="collection-footer">
         <span className="name">{name}</span>
+       span
         <span className="price">${price}</span>
       </div>
 
